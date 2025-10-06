@@ -1,0 +1,223 @@
+:root {
+  --neon-pink: 300 100% 50%;
+  --neon-cyan: 180 100% 50%;
+  --neon-purple: 270 100% 50%;
+  --dark-bg: 0 0% 4%;
+  --dark-surface: 0 0% 8%;
+  --text-primary: 0 0% 98%;
+  --text-secondary: 0 0% 70%;
+
+  /* Gradients */
+  --gradient-neon: linear-gradient(
+    135deg,
+    hsl(300 100% 50%),
+    hsl(270 100% 50%),
+    hsl(180 100% 50%)
+  );
+  --gradient-hero: linear-gradient(
+    180deg,
+    hsl(0 0% 4%),
+    hsl(270 100% 10%),
+    hsl(0 0% 4%)
+  );
+  --gradient-border: linear-gradient(
+    90deg,
+    hsl(300 100% 50%),
+    hsl(270 100% 50%),
+    hsl(180 100% 50%)
+  );
+
+  /* Glow Effects */
+  --glow-pink: 0 0 20px hsl(300 100% 50% / 0.5),
+    0 0 40px hsl(300 100% 50% / 0.3);
+  --glow-cyan: 0 0 20px hsl(180 100% 50% / 0.5),
+    0 0 40px hsl(180 100% 50% / 0.3);
+  --glow-purple: 0 0 20px hsl(270 100% 50% / 0.5),
+    0 0 40px hsl(270 100% 50% / 0.3);
+  --glow-intense: 0 0 30px hsl(300 100% 50% / 0.8),
+    0 0 60px hsl(270 100% 50% / 0.6), 0 0 90px hsl(180 100% 50% / 0.4);
+
+  --background: 0 0% 4%;
+  --foreground: 0 0% 98%;
+  --radius: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+}
+#hero .backgroundAnimation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #7400b8;
+}
+#hero .circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: #ffffff50;
+  left: var(--pL);
+  height: var(--wh);
+  width: var(--wh);
+  animation-delay: var(--aD);
+  bottom: -150px;
+  animation: bgAnimation 25s linear infinite;
+  animation-duration: var(--aDu);
+}
+
+@keyframes bgAnimation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+#hero .backgroundOverlay {
+  background-color: #00000080;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(1px);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #ffffff00;
+  width: 90%;
+  padding: 5px 4%;
+  margin-inline: auto;
+  border-radius: 3rem;
+  margin-top: 3dvh;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  transition: 300ms ease;
+}
+
+nav .active {
+  background-color: #7743ea;
+  a {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+nav ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+  font-size: 17px;
+}
+
+nav ul {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 9px 10px;
+  border-radius: 1rem;
+}
+nav img {
+  width: 5rem;
+  height: auto;
+}
+nav #loginBtn {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #7743ea;
+  padding: 9px 10px;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 650;
+  svg {
+    fill: white;
+  }
+}
+
+nav #hamburgerMenu {
+  display: none;
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+#hero .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#hero .content h1 {
+  color: #f0f4f9;
+  font-size: clamp(1.5rem, calc(7vw + 3px), 4.5rem);
+}
+#hero .content p {
+  color: rgba(240, 244, 249, 0.85);
+  font-size: clamp(15px, calc(4vw + 2px), 1.5rem);
+}
+
+@media screen and (max-width: 870px) {
+  nav ul {
+    display: none;
+  }
+  nav #loginBtn {
+    display: none;
+  }
+  nav #hamburgerMenu {
+    display: block;
+  }
+}
