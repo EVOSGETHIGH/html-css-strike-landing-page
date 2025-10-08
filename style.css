@@ -494,7 +494,7 @@ nav #hamburgerMenu svg {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary));
   height: 0.5rem;
   width: 50%;
-  bottom: -.3em;
+  bottom: -0.3em;
   left: 0;
   border-radius: 2rem;
 }
@@ -524,11 +524,10 @@ nav #hamburgerMenu svg {
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 50px #2466eb59;
-
 }
 
 #whyUs .card::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: -20px;
   border-radius: inherit;
@@ -542,47 +541,74 @@ nav #hamburgerMenu svg {
   opacity: 0.8;
 }
 
-#whyUs .card:hover .icon{
+#whyUs .card:hover .icon {
   transform: scale(1.1) rotate(10deg);
 }
 
 #whyUs .card:nth-child(1)::after {
-  background: radial-gradient(circle at top left, var(--primary), transparent 70%),
-              radial-gradient(circle at bottom right, var(--secondary), transparent 70%);
+  background: radial-gradient(
+      circle at top left,
+      var(--primary),
+      transparent 70%
+    ),
+    radial-gradient(circle at bottom right, var(--secondary), transparent 70%);
 }
-
 
 #whyUs .card:nth-child(2)::after {
-  background: radial-gradient(circle at top right, var(--highlight), transparent 70%),
-              radial-gradient(circle at bottom left, var(--light-primary), transparent 70%);
+  background: radial-gradient(
+      circle at top right,
+      var(--highlight),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      var(--light-primary),
+      transparent 70%
+    );
 }
-
 
 #whyUs .card:nth-child(3)::after {
-  background: radial-gradient(circle at center, var(--secondary), transparent 70%),
-              radial-gradient(circle at bottom right, var(--primary), transparent 70%);
+  background: radial-gradient(
+      circle at center,
+      var(--secondary),
+      transparent 70%
+    ),
+    radial-gradient(circle at bottom right, var(--primary), transparent 70%);
 }
-
 
 #whyUs .card:nth-child(4)::after {
-  background: radial-gradient(circle at top left, var(--light-primary), transparent 70%),
-              radial-gradient(circle at bottom right, var(--highlight), transparent 70%);
+  background: radial-gradient(
+      circle at top left,
+      var(--light-primary),
+      transparent 70%
+    ),
+    radial-gradient(circle at bottom right, var(--highlight), transparent 70%);
 }
-
 
 #whyUs .card:nth-child(5)::after {
-  background: radial-gradient(circle at top right, var(--primary), transparent 70%),
-              radial-gradient(circle at bottom left, var(--secondary), transparent 70%);
+  background: radial-gradient(
+      circle at top right,
+      var(--primary),
+      transparent 70%
+    ),
+    radial-gradient(circle at bottom left, var(--secondary), transparent 70%);
 }
 
-
 #whyUs .card:nth-child(6)::after {
-  background: radial-gradient(circle at top left, var(--highlight), transparent 70%),
-              radial-gradient(circle at bottom right, var(--light-primary), transparent 70%);
+  background: radial-gradient(
+      circle at top left,
+      var(--highlight),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      var(--light-primary),
+      transparent 70%
+    );
 }
 
 #whyUs .card:nth-child(even):before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -593,7 +619,7 @@ nav #hamburgerMenu svg {
   border-bottom: 5px solid var(--primary);
 }
 #whyUs .card:nth-child(odd):before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -608,7 +634,6 @@ nav #hamburgerMenu svg {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
-
 
 #whyUs .card:nth-child(1) .icon {
   background: linear-gradient(135deg, var(--primary) 60%, var(--secondary));
@@ -735,14 +760,17 @@ nav #hamburgerMenu svg {
     top: 5%;
   }
   .scroll-container {
-  position: absolute;
-  bottom: 2%;
-}
-@media (max-width: 500px) {
-  #whyUs h1::after {
-  content: "";
-  height: 0;
-  width: 0;
-}
-}
+    position: absolute;
+    bottom: 2%;
+  }
+  #whyUs{
+    padding: 0 10%;
+  }
+  @media (max-width: 500px) {
+    #whyUs h1::after {
+      content: "";
+      height: 0;
+      width: 0;
+    }
+  }
 }
