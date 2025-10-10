@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--background);
+}
+
+#heroCourse{
+    position: absolute;
+    top: 6.5em;
+}
+#heroCourse .pathText{
+    font-weight: 600;
+    color: #fff;
+    span{
+        color: var(--primary);
+        margin-inline: .5em;
+    }
+}
