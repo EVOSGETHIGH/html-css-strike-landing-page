@@ -29,6 +29,11 @@ body {
 
 }
 
+::selection{
+  color: var(--primary);
+  background-color: var(--background);
+}
+
 /* Page Scroll Bar */
 
 ::-webkit-scrollbar {
@@ -742,6 +747,9 @@ nav #hamburgerMenu svg {
   margin-bottom: 2rem;
 }
 
+#course .courseWrapper > a {
+  text-decoration: none;
+}
 #course .card {
   standard-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -858,33 +866,21 @@ nav #hamburgerMenu svg {
   color: white;
   text-align: left;
   letter-spacing: 2px;
+  font-size: clamp(1rem, 2.8vw + 1px, 1.2rem);
 }
 
-#course .card .bottom-section .row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+#course .card .bottom-section .content h3 {
+  color: var(--text-light);
+  font-size: clamp(.9rem, 2.5vw + 1px, 1.15rem);
+  margin: 7px 0;
+  text-align: left;
+  line-height: 1.4em;
 }
-
-#course .card .bottom-section .row .item {
-  flex: 30%;
-  text-align: center;
-  padding: 5px;
-  color: rgba(170, 222, 243, 0.721);
-}
-
-#course .card .bottom-section .row .item .big-text {
-  font-size: 12px;
-  display: block;
-}
-
-#course .card .bottom-section .row .item .regular-text {
-  font-size: 9px;
-}
-
-#course .card .bottom-section .row .item:nth-child(2) {
-  border-left: 1px solid rgba(255, 255, 255, 0.126);
-  border-right: 1px solid rgba(255, 255, 255, 0.126);
+#course .card .bottom-section .content p{
+  color: var(--text-fade);
+  font-size: clamp(.75rem, 2vw + 1px, 1rem);
+  text-align: left;
+  line-height: 1.3em;
 }
 
 /* About Montor Section */
@@ -957,9 +953,6 @@ nav #hamburgerMenu svg {
   width: 60px;
   font-family: Consolas;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   position: fixed;
   position-anchor: --profileScroll;
@@ -1780,6 +1773,14 @@ footer .footer-dot {
   }
   #course .card .top-section {
     height: 150px;
+  }
+  #course .card .bottom-section header{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  #course .card .bottom-section header .detail {
+  padding: 5px 10px;
   }
 }
 

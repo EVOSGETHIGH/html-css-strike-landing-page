@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course</title>
+    <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="courseStyle.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
     <nav class="ShowContent">
         <img src="assets/logo.png" alt="Logo">
         <ul>
-            <li class="active"><a href="hero">Home</a></li>
-            <li><a href="#whyUs">Why Us</a></li>
-            <li><a href="#">Course</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Why Us</a></li>
+            <li class="active"><a href="#">Course</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
@@ -50,9 +56,93 @@
                     <i class="fa-solid fa-clock"></i>
                     <span>23 Lecture</span>
                 </div>
-                <div class="buttonCard"><span>beginner</span></div>
-                <div class="buttonCard"></div>
+                <div class="buttonCard">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>beginner</span>
+                </div><br>
+                <div class="courseLikeBtn">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Like this course</span>
+                </div>
             </div>
+            <div class="courseContent">
+                <h2><i class="fa-solid fa-book"></i> Course Content</h2>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="courseContentDetail">
+                            <span>Introduction</span>
+                            <p>1 lesson • 1h 31m</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="courseContentDetail">
+                            <span>HTML</span>
+                            <p>5 lessons • 4h 10m</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="courseContentDetail">
+                            <span>CSS</span>
+                            <p>9 lessons • 9h 17m</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="courseContentDetail">
+                            <span>JavaScript</span>
+                            <p>8 lessons • 8h 55m</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <section class="learn-section">
+                <h2><i class="fa-solid fa-bullseye"></i> What You'll Learn</h2>
+                <ul class="learn-list">
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Build complete front-end applications using HTML, CSS, JavaScript, and React.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Develop robust back-end APIs with both Node.js/Express and Java Spring Boot.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Master databases with MongoDB and implement caching with Redis.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Understand and build real-time systems using WebSockets and WebRTC.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Learn core System Design principles to build scalable applications.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Integrate AI functionalities into your web projects.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Manage your code professionally with Git and GitHub.
+                    </li>
+                </ul>
+        </aside>
         </section>
     </main>
 </body>

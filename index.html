@@ -7,6 +7,7 @@
     <title>STRIKE</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lazyLoader.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900" rel="stylesheet">
@@ -19,9 +20,9 @@
         <ul>
             <li class="active"><a href="hero">Home</a></li>
             <li><a href="#whyUs">Why Us</a></li>
-            <li><a href="#">Course</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#course">Course</a></li>
+            <li><a href="#aboutMontor">About Us</a></li>
+            <li><a href="#ContactUs">Contact Us</a></li>
         </ul>
         <div id="loginBtn">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
@@ -236,104 +237,85 @@
         </section>
         <section id="course">
             <header>
-                <h1>Our <span>Premium Courses</span></h1>
-                <p>Discover our comprehensive learning programs designed by industry experts to advance your career and
+                <h1 class="antoshow">Our <span>Premium Courses</span></h1>
+                <p class="antoshow">Discover our comprehensive learning programs designed by industry experts to advance
+                    your career and
                     technical skills.</p>
             </header>
             <div class="courseWrapper">
-                <div class="card DSACard">
-                    <div class="top-section ">
-                        <div class="border"></div>
-                        <div class="icons">
-                            <span>DSA</span>
+                <a href="course.html">
+                    <div class="card DSACard antoshow">
+                        <div class="top-section ">
+                            <div class="border"></div>
+                            <div class="icons">
+                                <span>DSA</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bottom-section">
-                        <header>
-                            <div class="detail">Beginner to Advanced</div>
-                            <div class="noOfLecture">200 Lectures</div>
-                        </header>
-                        <span class="title">Data Structures & Algorithms (DSA)</span>
-                        <div class="row row1">
-                            <div class="item">
-                                <span class="big-text">2626</span>
-                                <span class="regular-text">UI elements</span>
-                            </div>
-                            <div class="item">
-                                <span class="big-text">100%</span>
-                                <span class="regular-text">Free for use</span>
-                            </div>
-                            <div class="item">
-                                <span class="big-text">38,631</span>
-                                <span class="regular-text">Contributors</span>
+                        <div class="bottom-section">
+                            <header>
+                                <div class="detail">Beginner to Advanced</div>
+                                <div class="noOfLecture">200 Lectures</div>
+                            </header>
+                            <span class="title">Data Structures & Algorithms (DSA)</span>
+                            <div class="content">
+                                <h3>by Rohit Negi</h3>
+                                <p>Master DSA concepts and advanced problem solving techniques to crack FAANG interviews
+                                    with confidence.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card WebDevCard">
-                    <div class="top-section ">
-                        <div class="border"></div>
-                        <div class="icons">
-                            <span>Web Dev</span>
+                </a>
+                <a href="course.html">
+                    <div class="card WebDevCard antoshow">
+                        <div class="top-section ">
+                            <div class="border"></div>
+                            <div class="icons">
+                                <span>Web Dev</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bottom-section">
-                        <header>
-                            <div class="detail">Beginner to Advanced</div>
-                            <div class="noOfLecture">120 Lectures</div>
-                        </header>
-                        <span class="title">Web Development + Blockchain + System Design + DSA</span>
-                        <div class="row row1">
-                            <div class="item">
-                                <span class="big-text">2626</span>
-                                <span class="regular-text">UI elements</span>
-                            </div>
-                            <div class="item">
-                                <span class="big-text">100%</span>
-                                <span class="regular-text">Free for use</span>
-                            </div>
-                            <div class="item">
-                                <span class="big-text">38,631</span>
-                                <span class="regular-text">Contributors</span>
+                        <div class="bottom-section">
+                            <header>
+                                <div class="detail">Beginner to Advanced</div>
+                                <div class="noOfLecture">120 Lectures</div>
+                            </header>
+                            <span class="title">Web Development + Blockchain + System Design + DSA</span>
+                            <div class="content">
+                                <h3>by Rohit Negi & Aditya Tandon</h3>
+                                <p>Complete LIVE course covering Web Dev, Blockchain, System Design, DSA with industry-grade
+                                    projects.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card HLDCard">
-                    <div class="top-section ">
-                        <div class="border"></div>
-                        <div class="icons">
-                            <span>HLD</span>
+                </a>                  
+                <a href="course.html">
+                    <div class="card HLDCard antoshow">
+                        <div class="top-section ">
+                            <div class="border"></div>
+                            <div class="icons">
+                                <span>HLD</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bottom-section">
-                        <header>
-                            <div class="detail">Beginner to Advanced</div>
-                            <div class="noOfLecture">20 Lectures</div>
-                        </header>
-                        <span class="title">High Level Design (HLD) Masterclass</span>
-                        <div class="row row1">
-                            <div class="item">
-                                <span class="big-text">2626</span>
-                                <span class="regular-text">UI elements</span>
-                            </div>
-                            <div class="item">
-                                <span class="big-text">100%</span>
-                                <span class="regular-text">Free for use</span>
-                            </div>
-                            <div class="item">
-                                <span class="big-text">38,631</span>
-                                <span class="regular-text">Contributors</span>
+                        <div class="bottom-section">
+                            <header>
+                                <div class="detail">Beginner to Advanced</div>
+                                <div class="noOfLecture">20 Lectures</div>
+                            </header>
+                            <span class="title">High Level Design (HLD) Masterclass</span>
+                            <div class="content">
+                                <h3>by Aditya Tandon</h3>
+                                <p>Deep dive into scalable systems architecture, real-world feature design, and
+                                    comprehensive end-to-end HLD problem solving.</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a> 
             </div>
         </section>
         <section id="aboutMontor">
             <header>
-                <h1>Meet Your <span>Instructor</span></h1>
-                <p> Learn from industry experts with real-world experience and proven track recordsPlay</p>
+                <h1 class="antoshow">Meet Your <span>Instructor</span></h1>
+                <p class="antoshow"> Learn from industry experts with real-world experience and proven track recordsPlay
+                </p>
             </header>
             <div class="profileWrapper">
                 <div class="profile-card">
