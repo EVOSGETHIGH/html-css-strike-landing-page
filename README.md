@@ -1,7 +1,7 @@
 
-# STRIKE — HTML & CSS Clone
+# STRIKE — HTML & CSS
 
-Live demo: https://your-live-demo-url  
+Live Site: https://strike-landing-pages.netlify.app/
 Source: https://github.com/yourname/strike-clone
 
 ## About
