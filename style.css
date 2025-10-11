@@ -57,6 +57,7 @@ body {
 }
 
 /* Navbar */
+/* Nav common styles */
 nav {
   position: fixed;
   top: 0;
@@ -67,12 +68,17 @@ nav {
   padding: 5px 4%;
   margin-inline: auto;
   border-radius: 1rem;
-  margin-top: 3dvh;
-  /* backdrop-filter: blur(1rem); */
+  margin-top: 1dvh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+nav img {
+  width: 5rem;
+  height: auto;
+}
+
 nav ul {
   display: flex;
   gap: 0.7rem;
@@ -82,32 +88,34 @@ nav ul {
   border-radius: 5rem;
   background-color: #1e1e2f60;
 }
+
 nav ul li {
   list-style: none;
   padding: 9px 10px;
   border-radius: 1rem;
 }
+
 nav ul li a {
   text-decoration: none;
   color: var(--text);
   font-weight: 600;
   transition: 300ms ease;
 }
+
 nav ul li a:hover {
   color: #fff;
   font-size: 17px;
 }
+
 nav .active {
   background-color: var(--primary);
 }
+
 nav .active a {
   color: #fff;
 }
-nav img {
-  width: 5rem;
-  height: auto;
-}
-nav #loginBtn {
+
+#loginBtn {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -118,17 +126,23 @@ nav #loginBtn {
   cursor: pointer;
   font-weight: 650;
 }
-nav #loginBtn svg {
+
+#loginBtn svg {
   fill: #fff;
 }
-nav #hamburgerMenu {
+
+#hamburgerMenu {
   display: none;
+  cursor: pointer;
 }
-nav #hamburgerMenu svg {
+
+#hamburgerMenu svg {
   width: 2rem;
   height: 2rem;
   fill: #fff;
 }
+
+
 
 /* Hero Section */
 #hero {
@@ -1655,8 +1669,15 @@ footer .footer-dot {
 
 /* Media Queries */
 @media (max-width: 870px) {
-  nav ul,
-  nav #loginBtn {
+  nav{
+    background-color: #ffffff00;
+    backdrop-filter: blur(10px);
+  }
+  .Menu{
+  display: flex;
+}
+  nav  ul,
+  nav  #loginBtn {
     display: none;
   }
   nav #hamburgerMenu {
